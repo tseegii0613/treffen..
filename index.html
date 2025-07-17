@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Khulan & Tsee Gii's Meet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Сайн уу Хулан 🥰</h2>
+    <p>Би Tsee Gii байна. Бид хоёр хэзээ уулзаж чадах вэ?</p>
+
+    <div class="step">
+      <label>➊ Сонгоно уу:</label>
+      <select id="weekSelect">
+        <option value="">-- 7 хоног сонгох --</option>
+        <option value="this">Энэ 7 хоног (Баасан, Бямба, Ням)</option>
+        <option value="next">Дараа 7 хоног (Даваа → Ням)</option>
+      </select>
+    </div>
+
+    <div class="step hidden" id="dayStep">
+      <label>➋ Өдрөө сонгоно уу:</label>
+      <select id="daySelect"></select>
+    </div>
+
+    <div class="step hidden" id="timeStep">
+      <label>➌ Цагаа сонгоно уу (13:00 - 19:00):</label>
+      <select id="timeSelect"></select>
+    </div>
+
+    <div class="step hidden" id="placeStep">
+      <label>➍ Хаана уулзах вэ?</label>
+      <input type="text" id="placeInput" placeholder="Жишээ нь: Shangri la, Park...">
+    </div>
+
+    <div class="step hidden" id="summaryStep">
+      <p id="summaryText"></p>
+      <button id="confirmBtn">OK, уулзъя! 🤍</button>
+    </div>
+
+    <div class="step hidden" id="finalMessage">
+      <p id="finalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
